@@ -43,6 +43,8 @@ db.once('open',()=>{
       {
         name: messageDetails.name,
         message: messageDetails.message,
+        timestamp: messageDetails.timestamp,
+        recived: messageDetails.recived
       });
     } else{
       console.log("error in pusher");
